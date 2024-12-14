@@ -62,3 +62,19 @@ npm install react-canvas-draw fabric --legacy-peer-deps
 
 This flag tells npm to bypass strict peer dependency resolution and use the older behavior, which often resolves conflicts like this.
 ```
+
+## Challenges Faced
+
+1. **Canvas Screen Usage**:
+   - **Challenge**: Ensuring the canvas properly adjusted and fit within the screen on different devices was tricky. The canvas content was not scaling properly when the window size changed.
+   - **Solution**: I solved this issue by using `overflow: hidden` to prevent the canvas from overflowing its container. Additionally, I dynamically adjusted the canvas size based on the screen size to ensure it remained responsive and usable across various devices.
+
+2. **Responsive Design**:
+   - **Challenge**: Ensuring that the UI was responsive across different screen sizes was a challenge.
+   - **Solution**: I used Material-UI's Grid system to create a responsive layout that adjusts based on the screen size.
+
+## Conclusion
+
+This project demonstrates the ability to create an interactive image inpainting widget using React and Material-UI. The challenges faced during development provided valuable learning experiences in state management, responsive design, and handling canvas resizing.
+
+Feel free to contribute or reach out with any questions!
