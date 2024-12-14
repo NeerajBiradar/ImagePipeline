@@ -75,6 +75,6 @@ This flag tells npm to bypass strict peer dependency resolution and use the olde
 
 ## Conclusion
 
-This project demonstrates the ability to create an interactive image inpainting widget using React and Material-UI. The challenges faced during development provided valuable learning experiences in state management, responsive design, and handling canvas resizing.
+This project demonstrates the ability to create an interactive image inpainting widget using React and TailWind. The challenges faced during development provided valuable learning experiences in state management, responsive design, and handling canvas resizing.
 
 Feel free to contribute or reach out with any questions!
