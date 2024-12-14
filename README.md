@@ -71,7 +71,7 @@ This flag tells npm to bypass strict peer dependency resolution and use the olde
 
 2. **Responsive Design**:
    - **Challenge**: Ensuring that the UI was responsive across different screen sizes was a challenge.
-   - **Solution**: I used Material-UI's Grid system to create a responsive layout that adjusts based on the screen size.
+   - **Solution**: I Tailwind CSS to create a responsive layout that adjusts based on the screen size.
 
 ## Conclusion
 
