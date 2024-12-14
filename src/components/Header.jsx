@@ -16,7 +16,7 @@ function Navbar() {
               to="/edit"
               className="px-6 py-2 border border-white text-sm sm:text-base md:text-md font-medium rounded-full text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
             >
-              Upload
+              Edit your Image
             </Link>
           </div>
         </div>

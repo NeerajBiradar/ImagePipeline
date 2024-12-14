@@ -79,10 +79,10 @@ const ImageCanvas = () => {
           {/* Brush Size Control */}
           <div className="flex items-center space-x-2 w-full sm:w-auto">
             <button
-              className="border border-gray-300 rounded p-2 hover:bg-gray-100"
+              className="border-2  border-black rounded p-2 hover:bg-gray-100"
               title="Paintbrush"
             >
-              <span className="hidden md:inline">Size</span> {/* Visible on md and above */}
+              <span className="hidden md:inline font-medium">Size</span> {/* Visible on md and above */}
 
               <FaPaintBrush className="w-4 h-4 md:hidden" />
             </button>
@@ -99,8 +99,8 @@ const ImageCanvas = () => {
 
           {/* Action Buttons */}
           <div className="flex items-center space-x-2">
-            <label className="border border-black p-2 rounded-md">
-              <span className="hidden md:inline">Upload</span> {/* Visible on md and above */}
+            <label className="border-2 border-black p-2 rounded-md">
+              <span className="hidden md:inline font-medium">Upload</span> {/* Visible on md and above */}
 
               <FaUpload className="w-4 h-4 md:hidden" />
               <input
@@ -112,20 +112,20 @@ const ImageCanvas = () => {
               />
             </label>
             <button
-              className="border border-gray-300 rounded p-2 hover:bg-gray-100"
+              className="border-2 border-black rounded p-2 hover:bg-gray-100"
               title="Preview Mask"
               onClick={exportMask}
             >
               <FaMagic className="w-4 h-4 md:hidden" />
-              <span className="hidden md:inline">Preview Mask</span> {/* Visible on md and above */}
+              <span className="hidden md:inline font-medium">Preview Mask</span> {/* Visible on md and above */}
             </button>
             <button
-              className="border border-gray-300 rounded p-2 hover:bg-gray-100"
+              className="border-2 border-black rounded p-2 hover:bg-gray-100"
               title="Clear"
               onClick={handleClearCanvas}
             >
               <FaEraser className="w-4 h-4 md:hidden" />
-              <span className="hidden md:inline ">Clear</span> {/* Visible on md and above */}
+              <span className="hidden md:inline font-medium">Clear</span> {/* Visible on md and above */}
             </button>
           </div>
         </div>
@@ -172,7 +172,7 @@ const ImageCanvas = () => {
               canvasHeight={window.innerHeight * 0.7}
               imgSrc={imgSrc}
               brushColor="#FFFFFF"
-              className="border border-gray-300"
+              className="border border-black"
             />
           </div>
         )}
