@@ -1,44 +1,64 @@
-# Image Inpainting Widget
+# Image-inpainting-widget 👨🏽‍💻©️
 
-## Description
-This is an image inpainting application that allows users to upload an image, draw a mask, and export the mask for inpainting.
+This project is a simple React-based application that allows users to upload an image, draw a mask on it, and export both the original image and the mask as a pair. The mask is drawn by the user in white, and the rest of the image remains black. Users can adjust the brush size for better control and save the mask for further use.
 
-## Demo Link:
-Vercel - https://image-pipeline-inpainting.vercel.app/
+## Demo
+- No backend for live version. 
+- **Live Demo Link**: https://image-pipeline-205ox2z3e-neerajbiradars-projects.vercel.app/
 
-## How to Run the Project Locally
+## Features
 
-### Prerequisites:
-- **Node.js** (v14 or higher)
-- **npm** (v6 or higher)
+1. **Image Upload**: 
+   - Users can upload an image (JPEG/PNG format).
+   - The image is displayed on a canvas for drawing.
 
-### Steps:
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/NitinBharti007/ImagePipeline_Inpainting.git
-2. **Navigate to the project directory**:
-   ```bash
-   cd image-inpainting-widget
-3. **Install the dependencies**:
-   ```bash
-   npm install
-4. **Run the development server**:
-   ```bash
-   npm run start
-The application should now be running locally at http://localhost:3000
+2. **Mask Drawing**:
+   - Users can draw on the image to create a mask.
+   - The mask appears in white, while the background remains black.
 
-### Libraries Used:
-- **React** – JavaScript library for building user interfaces
-- **Material UI** – React components for faster and easier web development
+3. **Brush Controls**:
+   - Users can adjust the brush size to draw with more precision.
 
-### Challenges Faced and Solutions:
-**Challenge 1**: Handling Canvas Scaling for Different Screen Sizes
-- **Problem**: Ensuring that users can draw on the canvas consistently across various screen sizes.
-- **Solution**: I calculated the scaling factor using the canvas's width and height relative to the screen dimensions, ensuring consistent drawing.
+4. **Export the Mask**:
+   - The generated mask can be exported as an image.
+   - Users can also clear the canvas for new drawings.
 
-**Challenge 2**: Exporting Mask from Canvas
-- **Problem**: Exporting the mask generated on the canvas in a usable format.
-- **Solution**: I used the toDataURL() method on the canvas to convert the mask into a downloadable PNG format.
+5. **Display Images**:
+   - After generating the mask, both the original image and the mask are displayed side by side.
 
-### Contact
-For any queries or issues, feel free to open an issue on the repository or contact me at dev.nitin63@gmail.com
+## Technologies Used
+- **Frontend**: React.js + Vite , react-canvas-draw
+
+## Setup Instructions
+
+Follow these steps to set up and run the project locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/NeerajBiradar/ImagePipeline.git
+cd ImagePipeline
+```
+
+### 2. Frontend Setup (React)
+Navigate to the client folder:
+ ```bash
+ cd image-inpainting-widget
+ npm install 
+   ```
+Start the frontend development server:
+ ```bash
+ npm run dev
+   ```
+This will start the frontend on http://localhost:5171.
+# Importanat Point Here To Note 
+```bash
+There may you encounter error occurs because react-canvas-draw has a peer dependency of react versions 16.x || 17.x, while my project is using React 18.3.1. This is causing a dependency conflict.
+
+Use --legacy-peer-deps Flag
+Run the following command instead of npm install:
+
+npm install react-canvas-draw fabric --legacy-peer-deps
+
+This flag tells npm to bypass strict peer dependency resolution and use the older behavior, which often resolves conflicts like this.
+```
